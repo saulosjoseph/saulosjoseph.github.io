@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Rute Andrade</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+	</head>
+	<body class="is-preload">
+		
+	<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+				<section id="main">
+					<!-- Nav 
+					<nav class="topnav">
+						<a href="#about">Sobre</a> |
+						<a href="#contato">Contato</a>
+						<a href="#contact">Agendar</a>
+					</nav> -->
+					<br>
+					<header>							
+						<span class="avatar"><img src="images/rute_psicologa_mandala_v4.png" alt="" /></span>	
+						<h1>Rute Andrade</h1>						
+						<p>Psicologia Clínica | Psicanálise <br> CRP 02/22705</p>
+					</header>
+					<footer>
+						<div class="contact">
+							<a href="https://wa.me/5581984319013">
+								<i class="fa fa-phone" aria-hidden="true"></i>(81) 9 8431-9013
+							</a>
+							<br>
+							<a href="email">
+								<i class="fa fa-envelope" aria-hidden="true"></i>rutecelina.ba@gmail.com
+							</a>
+						</div>
+					</footer>
+					<hr />
+						<section id="about">
+							<h2>Sobre</h2>
+							<p class="about">Psicóloga graduada pela Universidade Federal de Campina Grande (UFCG) com ênfase em 
+								Psicologia Social e Clínica Psicanalítica, possui experiência dentro da Atenção Primária 
+								em Saúde trabalhando com Redução de Danos, Clinica Ampliada e Gestão Autônoma da Medicação 
+								(GAM), participou como membra ativa do Núcleo de Pesquisa e extensão Sobre Drogas (NUD/UFCG)
+									discutindo e estudando temáticas concernentes a Rede de Atenção Psicossocial (RAPS), Reforma 
+									Psiquiátrica, Luta Antimanicomial, Segurança Publica e Política sobre Drogas. <br>Durante o percurso 
+									acadêmico participou de grupos de estudos e pesquisa como voluntária (PIVIC/CNPQ) e colaboradora
+									(PIBIC/CNPQ) dentro das temáticas: Representações Sociais, Movimentos Sociais, Movimento
+									Estudantil, Ocupação das escolas públicas, Discurso de ódio na política e Analise de Discurso.<br> 
+									Dentro da área clínica, possui experiência como estagiária trabalhando com atendimentos
+									individuais com crianças, adolescentes e adultos, fazendo uso da ferramenta da psicanálise,
+										realizou manejos em Conversações Clínicas com estudantes e professores em uma escola pública
+										e creche pública na cidade de Campina Grande/PB. <br>Atualmente, é militante do Fórum em Defesa
+										do SUS e da Luta Antimanicomial.</p>
+						</section>
+					<hr />
+					<h2>Contato</h2>
+					<form method="post" action="#" id="contato">
+						<div class="fields">
+							<div class="field">
+								<input type="text" name="name" id="name" placeholder="Nome" />
+							</div>
+							<div class="field">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Menssagem" rows="4"></textarea>
+							</div>
+						</div>
+						<ul class="actions special">
+							<li><a href="#" class="button">Enviar</a></li>
+						</ul>
+					</form>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li></li>
+					</ul>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script>
+			if ('addEventListener' in window) {
+				window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+			}
+
+			let mainNavLinks = document.querySelectorAll("nav a");
+			mainNavLinks.forEach(link => {
+			link.addEventListener("click", event => {
+				event.preventDefault();
+				let target = document.querySelector(event.target.hash);
+				target.scrollIntoView({
+				behavior: "smooth",
+				block: "start"
+				});
+			});
+			});
+		</script>
+	</body>
+</html>
