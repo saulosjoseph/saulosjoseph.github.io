@@ -201,10 +201,12 @@
 			-webkit-transition: color 0.2s ease, text-shadow 0.2s ease;
 			-ms-transition: color 0.2s ease, text-shadow 0.2s ease;
 			transition: color 0.2s ease, text-shadow 0.2s ease;
+			text-decoration:none;
 		}
 
 		a:hover {
-			color: #ff7496;
+			color: #0a8c68;
+			text-decoration:none;
 		}
 
 	strong, b {
@@ -231,9 +233,10 @@
 		}
 
 	h1 {
-		font-size: 2em;
-		letter-spacing: 0.1em;
-		margin: 0 0 0.525em 0;
+		font-size: 6em;
+		letter-spacing: 0em;
+		margin: 0 0 0 0;
+		font-family: 'Alex Brush', cursive;
 	}
 
 	h2 {
@@ -259,7 +262,7 @@
 	@media screen and (max-width: 480px) {
 
 		h1 {
-			font-size: 1.65em;
+			font-size: 4em;
 		}
 
 	}
@@ -398,7 +401,7 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ff7496;
+			border-color: #0a8c68;
 		}
 
 	select {
@@ -494,13 +497,13 @@
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			color: #ff7496;
+			color: #0a8c68;
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #ff7496;
+			border-color: #0a8c68;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -788,7 +791,7 @@
 				}
 
 				ul.icons li a:hover:before {
-					text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
+					text-shadow: 1.25px 0px 0px #0a8c68, -1.25px 0px 0px #0a8c68, 0px 1.25px 0px #0a8c68, 0px -1.25px 0px #0a8c68;
 				}
 
 				ul.icons li a:before {
@@ -804,7 +807,7 @@
 				}
 
 				ul.icons li a:hover {
-					border-color: #ff7496;
+					border-color: #0a8c68;
 				}
 
 		@media screen and (max-width: 480px) {
@@ -849,8 +852,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: #ff7496;
-			color: #ff7496 !important;
+			border-color: #0a8c68;
+			color: #0a8c68 !important;
 		}
 
 		input[type="submit"].icon,
@@ -929,7 +932,14 @@
 		opacity: 0.95;
 		position: relative;
 		text-align: center;
-		width: 70em;
+		width: 80%;
+	}
+
+	.navbar-nav.navbar-center {
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
 	}
 
 	#app{
@@ -951,7 +961,7 @@
 				margin: 0 auto;
 				border-radius: 100%;
 				box-shadow: 0 0 0 1.5em #ffffff;
-				width: 15em;
+				width: 20em;
 			}
 
 			#main .avatar:before {
