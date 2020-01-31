@@ -45,6 +45,39 @@
 		line-height: 1;
 	}
 
+	#imgSobre {
+		float:left;
+		width:15em;
+		margin-right:1em;
+		margin-bottom:1em
+	}
+
+	.instagram {
+		float: right;
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#imgSobre {
+			float: none;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+
+		.instagram {
+			float: unset;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+
+		.instagram {
+			float: unset;
+		}
+	}
+
 	ol, ul {
 		list-style: none;
 	}
@@ -1069,10 +1102,14 @@
 			display: block;
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 375px) {
 
 			#wrapper {
 				padding: 0.75em;
+			}
+
+			.contactMail{
+				padding-left: 0;
 			}
 
 		}

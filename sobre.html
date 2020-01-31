@@ -7,6 +7,16 @@
 <html>
 	<head>
 		<title>Rute Andrade</title>
+
+		<!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
+		<!--[if IE]><link rel="shortcut icon" href="path/to/favicon.ico"><![endif]-->
+
+		<!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
+		<link rel="apple-touch-icon-precomposed" href="favicon.png">
+
+		<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+		<link rel="icon" href="favicon.png">
+		
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui, shrink-to-fit=no" />
@@ -48,8 +58,8 @@
 							<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 								<div class="navbar-nav navbar-center">
 									<a class="nav-item nav-link" href="index.html">Inicio</a>
-									<a class="nav-item nav-link active" href="sobre.html">Sobre</a>
-									<a class="nav-item nav-link" href="#">Textos</a>
+									<a class="nav-item nav-link active" href="#">Sobre</a>
+									<a class="nav-item nav-link" href="textos.html">Textos</a>
 								</div>
 							</div>
 						</div>
@@ -59,7 +69,7 @@
 					 
 						<section id="sobre">							
 							<p class="about text-justify">
-								<img src="images/mandala.png" alt="Mandala logo" style="float:left;width:15em;height:15em;margin-right:1em;margin-bottom:1em">
+								<img src="images/mandala.png" alt="Mandala logo" id="imgSobre">
 								&nbsp;&nbsp;&nbsp;Psicóloga graduada pela Universidade Federal de Campina Grande (UFCG) com ênfase em 
 								Psicologia Social e Clínica Psicanalítica, possui experiência dentro da Atenção Primária 
 								em Saúde trabalhando com Redução de Danos, Clinica Ampliada e Gestão Autônoma da Medicação 
@@ -88,13 +98,13 @@
 											<i class="fa fa-phone" aria-hidden="true"></i> &nbsp; (81) 9 8431-9013
 										</a>
 									  </div>
-									  <div class="col-sm">
-										<a href="mailto:psicologa.ruteandrade@gmail.com">
+									  <div class="col-sm contactMail">
+										<a href="mailto:psicologa.ruteandrade@gmail.com" class="instagram">
 											<i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; psicologa.ruteandrade@gmail.com
 										</a>
 									</div>
 									<div class="col-sm">
-										<a href="https://www.instagram.com/ruteandrade.rec">
+										<a href="https://www.instagram.com/ruteandrade.rec" class="instagram">
 											<i class="fa fa-instagram" aria-hidden="true"></i> &nbsp; ruteandrade.rec
 										</a>
 									</div>

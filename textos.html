@@ -7,7 +7,7 @@
 <html>
 	<head>
 		<title>Rute Andrade</title>
-		
+
 		<!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
 		<!--[if IE]><link rel="shortcut icon" href="path/to/favicon.ico"><![endif]-->
 
@@ -16,7 +16,6 @@
 
 		<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
 		<link rel="icon" href="favicon.png">
-
 
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -50,7 +49,7 @@
 				<section id="main">
 
 					<!-- Nav -->
-					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
 						<div class="container">
 						<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,42 +57,77 @@
 							</button>
 							<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 								<div class="navbar-nav navbar-center">
-									<a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+									<a class="nav-item nav-link" href="index.html">Inicio</a>
 									<a class="nav-item nav-link" href="sobre.html">Sobre</a>
-									<a class="nav-item nav-link" href="textos.html">Textos</a>
+									<a class="nav-item nav-link active" href="#">Textos</a>
 								</div>
 							</div>
 						</div>
 					</nav>
-					 
-					<br>
-					<header>							
-						<span class="avatar"><img src="images/rute_psicologa_mandala_v4.png" alt="" /></span>	
-						<h1>Rute Andrade</h1>						
-						<p>Psicologia Clínica | Psicanálise <br> CRP 02/22705</p>
-					</header>
 
-					<footer>
-						<div class="container contact">
+					<br>
+					 
+						<section id="texos">
 							<div class="row">
-							  	<div class="col-sm">
-									<a href="https://wa.me/5581984319013">
-										<i class="fa fa-phone" aria-hidden="true"></i> &nbsp; (81) 9 8431-9013
-									</a>
-							  	</div>
-							  	<div class="col-sm contactMail">
-									<a href="mailto:psicologa.ruteandrade@gmail.com" class="instagram">
-										<i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; psicologa.ruteandrade@gmail.com
-									</a>
+								<div class="col-sm-6">
+									<div class="card">
+										<img class="card-img-top" src="images/selfie.png" alt="Card image cap">
+										<div class="card-body">
+											<h5 class="card-title font-weight-bold">Mais Selfie? - Imagem como real-</h5>
+											<p class="card-text text-justify">
+												&nbsp;&nbsp;&nbsp;É certo que além da imagem existe para todos os sujeitos um corpo caótico, múltiplo, todas as
+												 sensações biológicas ou não extrapolam as relações com o significado produzindo cadeias de significantes para os 
+												 sujeitos, tais significantes possuem as marcas das identificações de cada um, é comum -independe de estrutura psíquica- 
+												 não se reconhecer por vezes em um reflexo no espelho.</p>
+											<a href="maisSelfie.html" class="btn btn-outline-success">Ler</a>
+										</div>
+									</div>
 								</div>
-								<div class="col-sm">
-									<a href="https://www.instagram.com/ruteandrade.rec" class="instagram">
-										<i class="fa fa-instagram" aria-hidden="true"></i> &nbsp; ruteandrade.rec
-									</a>
+								<div class="col-sm-6">
+									<div class="card">
+										<img class="card-img-top" src="images/rute_psicologa_mandala_v4.png" alt="Card image cap">
+										<div class="card-body">
+											<h5 class="card-title font-weight-bold">É preciso perder para poder ganhar</h5>
+											<p class="card-text">"Compositor de destinos<br>
+												Tambor de todos os ritmos<br>
+												Tempo, tempo, tempo, tempo<br>
+												Entro num acordo contigo<br>
+												Tempo, tempo, tempo, tempo<br>
+												Por seres tão inventivo<br>
+												E pareceres contínuo<br>
+												Tempo, tempo, tempo, tempo<br>
+												És um dos deuses mais lindos<br>
+												Tempo, tempo, tempo, tempo (..)"</p>
+											<a href="#" class="btn btn-outline-success">Ler</a>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</footer>
+						</section>
+
+						<hr>
+
+						<footer>
+							<div class="container contact">
+								<div class="row">
+									  <div class="col-sm">
+										<a href="https://wa.me/5581984319013">
+											<i class="fa fa-phone" aria-hidden="true"></i> &nbsp; (81) 9 8431-9013
+										</a>
+									  </div>
+									  <div class="col-sm contactMail">
+										<a href="mailto:psicologa.ruteandrade@gmail.com" class="instagram">
+											<i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; psicologa.ruteandrade@gmail.com
+										</a>
+									</div>
+									<div class="col-sm">
+										<a href="https://www.instagram.com/ruteandrade.rec" class="instagram">
+											<i class="fa fa-instagram" aria-hidden="true"></i> &nbsp; ruteandrade.rec
+										</a>
+									</div>
+								</div>
+							</div>
+						</footer>
 				</section>
 
 			<!-- Footer -->
@@ -117,16 +151,16 @@
 				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 			}
 
-			let mainNavLinks = document.querySelectorAll("nav a");
+			// let mainNavLinks = document.querySelectorAll("nav a");
 			// mainNavLinks.forEach(link => {
 			// link.addEventListener("click", event => {
 			// 	event.preventDefault();
 			// 	let target = document.querySelector(event.target.hash);
 			// 	target.scrollIntoView({
-			// 		behavior: "smooth",
-			// 		block: "start"
-			// 		});
+			// 	behavior: "smooth",
+			// 	block: "start"
 			// 	});
+			// });
 			// });
 		</script>
 	</body>
