@@ -52,6 +52,13 @@
 		margin-bottom:1em
 	}
 
+	#imgTexto {
+		float:left;
+		width:35em;
+		margin-right:1em;
+		margin-bottom:1em
+	}
+
 	.instagram {
 		float: right;
 	}
@@ -63,7 +70,15 @@
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
-			width: 50%;
+			width: 15em
+		}
+
+		#imgTexto {
+			float: none;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 15em;
 		}
 
 		.instagram {
